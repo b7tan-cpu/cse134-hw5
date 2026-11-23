@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact form with JavaScript | Binteng Tan</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="form.js" defer></script>
+<script src="theme.js" defer></script>
+</head>
+<body class="page-form">
+<header>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<p><a href="index.html">Binteng Tan</a> <span>— Computer Science Portfolio</span></p>
+<button class="theme-toggle" type="button" data-theme-toggle hidden>Switch to dark theme</button>
+<nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="experiments.html">Experiments</a></li>
+<li><a href="form-no-js.html">Contact (no JS)</a></li>
+<li><a href="form-with-js.html" aria-current="page">Contact (JS)</a></li></ul></nav>
+</header>
+<main id="main-content">
+  <h1>Contact form with JavaScript</h1>
+  <section class="form-card" aria-label="Contact form">
+    <p>Use sample contact details. This demo sends your entries to httpbin, which shows what the form submitted.</p>
+    <form class="contact-form" action="https://httpbin.org/post" method="post">
+      <div class="form-field">
+        <label for="name">Name (required)</label>
+        <p class="field-hint" id="name-hint">Enter 1 to 100 characters.</p>
+        <input id="name" name="name" type="text" autocomplete="name" required minlength="1" maxlength="100" aria-describedby="name-hint name-error">
+      </div>
+      <div class="form-field">
+        <label for="email">Email (required)</label>
+        <p class="field-hint" id="email-hint">For example, student@example.com.</p>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-error">
+      </div>
+      <div class="form-field">
+        <label for="comments">Comments (required)</label>
+        <p class="field-hint" id="comments-hint">Enter 10 to 1,000 characters.</p>
+        <textarea id="comments" name="comments" rows="6" required minlength="10" maxlength="1000" aria-describedby="comments-hint comments-error comments-count"></textarea>
+      </div>
+      <div class="form-errors" id="form-feedback" aria-live="polite" hidden>
+        <ul class="error-list" aria-label="Form errors">
+          <li id="name-error" hidden></li>
+          <li id="email-error" hidden></li>
+          <li id="comments-error" hidden></li>
+        </ul>
+      </div>
+      <p class="character-count" id="comments-count" hidden></p>
+      <input type="hidden" name="possible_bot" value="true">
+      <input type="hidden" name="form-errors" disabled>
+      <button type="submit">Submit sample message</button>
+    </form>
+  </section>
+</main>
+<footer><p><small>© 2026 Binteng Tan. CSE 134B portfolio.</small></p><p><a href="sitemap.html">Site map</a> · <a href="mailto:tbinteng@gmail.com">Email Binteng</a></p></footer>
+</body>
+</html>

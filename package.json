@@ -1,0 +1,10 @@
+{
+  "name": "cse134-hw5-portfolio",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/component.test.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "29.1.1"
+  }
+}
