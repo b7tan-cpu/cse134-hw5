@@ -4,6 +4,10 @@ This independent copy of my Homework 4 portfolio adds **Cat Curiosity**, a custo
 element on [`projects.html#cat-facts`](projects.html#cat-facts). The home page links
 directly to it. The original Homework 4 repository and deployment are unchanged.
 
+- Repository: https://github.com/b7tan-cpu/cse134-hw5
+- Portfolio: https://b7tan-cpu.github.io/cse134-hw5/
+- Component: https://b7tan-cpu.github.io/cse134-hw5/projects.html#cat-facts
+
 ## Preview the portfolio
 
 No build or dependencies are needed for the main site. From this folder:
@@ -60,6 +64,9 @@ for installation, build, preview, and shared-footer verification instructions.
 
 See [VERIFICATION.md](VERIFICATION.md) for checks and reproduction steps. The
 automated DOM tests are in `tests/component.test.cjs`:
+
+The test tooling was verified with Node.js 24. The portfolio itself does not
+require Node.js or npm.
 
 ```sh
 npm ci

@@ -21,6 +21,14 @@ Checked on November 23, 2026.
 - Shared-section propagation: temporarily changed only `footer.njk`, rebuilt,
   and checked the new marker in both output files. Restored the final footer and
   rebuilt successfully.
+- Chrome preview of both generated SSG pages confirmed their distinct main
+  content, local assets, working Home/About navigation, and shared footer.
+- Created and pushed the independent `b7tan-cpu/cse134-hw5` repository. Enabled
+  GitHub Pages from `main` at the repository root. The deployed home page returned
+  HTTP 200, and the deployed Projects component successfully fetched and displayed
+  a live cat fact in Chrome. `links.txt` contains the three final submission URLs.
+- Local-link validation found no missing `href`/`src` file targets in the main
+  portfolio or the two generated exercise pages.
 
 ## Reproduce in the browser
 
